@@ -1,0 +1,80 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f0e6f6;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #3a2465;
+    text-shadow: 1px 1px 2px #b3a1c7;
+}
+
+results {
+    font-size: 1.2em;
+    color: #4a2040;
+    padding: 10px;
+    background-color: #f9f0ff;
+    border-radius: 10px;
+    border: 2px solid #d3a8e6;
+    margin-top: 20px;
+}
+
+.attribute label, .attribute select, .attribute input, .attribute button {
+    display: inline-block;
+    margin: 5px;
+}
+
+.attribute input[type="number"] {
+    width: 50px;
+}
+
+
+.attribute {
+    border: 2px solid #7c5295;
+    background-color: #eadeeb;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+button {
+    margin: 5px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    background-color: #9268a9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ae8aca;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+@keyframes pulse {
+    0% { background-color: #ffffff; }
+    50% { background-color: #ffdd57; }
+    100% { background-color: #ffffff; }
+}
+
+#results {
+    font-size: 1.2em;
+    color: #4a2040;
+    padding: 10px;
+    background-color: #f9f0ff;
+    border-radius: 10px;
+    border: 2px solid #d3a8e6;
+    margin-top: 20px;
+}
+

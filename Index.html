@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabula Ultima Dice Roller</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Fabula Ultima Dice Roller</h1>
+    <div id="character-attributes">
+        <form id="attributes-form">
+            <!-- Attribute block -->
+            <div class="attribute">
+                <label for="might">Might (MIG)</label>
+                <select id="might">
+                    <option value="6">d6</option>
+                    <option value="8">d8</option>
+                    <option value="10">d10</option>
+                    <option value="12">d12</option>
+                </select>
+                <br>
+                <button type="button" onclick="modifyDiceSize('might', 1)">Buff</button>
+                <button type="button" onclick="modifyDiceSize('might', -1)">Debuff</button>
+                <br>
+                Modifier
+                <input type="number" id="might-mod" placeholder="+/-" />
+               Select<input type="checkbox" id="might-roll" class="roll-check" />
+            </div>
+            <div class="attribute">
+                <label for="dexterity">Dexterity (DEX)</label>
+                <select id="dexterity">
+                    <option value="6">d6</option>
+                    <option value="8">d8</option>
+                    <option value="10">d10</option>
+                    <option value="12">d12</option>
+                </select>
+                <br>
+                <button type="button" onclick="modifyDiceSize('dexterity', 1)">Buff</button>
+                <button type="button" onclick="modifyDiceSize('dexterity', -1)">Debuff</button>
+                <br>
+            Modifier<input type="number" id="dexterity-mod" placeholder="+/-" /> 
+          Select<input type="checkbox" id="dexterity-roll" class="roll-check" />
+            </div>
+            <div class="attribute">
+                <label for="insight">Insight (INS)</label>
+                <select id="insight">
+                    <option value="6">d6</option>
+                    <option value="8">d8</option>
+                    <option value="10">d10</option>
+                    <option value="12">d12</option>
+                </select>
+                <br>
+                <button type="button" onclick="modifyDiceSize('insight', 1)">Buff</button>
+                <button type="button" onclick="modifyDiceSize('insight', -1)">Debuff</button>
+                <br>
+                Modifier
+                <input type="number" id="insight-mod" placeholder="+/-" />
+            Select<input type="checkbox" id="insight-roll" class="roll-check" />
+            </div>
+            <div class="attribute">
+                <label for="willpower">Willpower (WLP)</label>
+                <select id="willpower">
+                    <option value="6">d6</option>
+                    <option value="8">d8</option>
+                    <option value="10">d10</option>
+                    <option value="12">d12</option>
+                </select>
+                <br>
+                <button type="button" onclick="modifyDiceSize('willpower', 1)">Buff</button>
+                <button type="button" onclick="modifyDiceSize('willpower', -1)">Debuff</button>
+                <br>
+            Modifier<input type="number" id="willpower-mod" placeholder="+/-" />
+            Select<input type="checkbox" id="willpower-roll" class="roll-check" />
+            </div>
+            <!-- Repeat blocks for other attributes: Dexterity, Insight, Willpower -->
+        </form>
+        <button onclick="rollSelectedDice()">Roll Selected Dice</button>
+    </div>
+    <script src="script.js"></script>
+    <!-- Add below the button in your existing HTML structure -->
+<div id="results" style="margin-top: 20px;"></div>
+</body>
+</html>
